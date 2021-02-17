@@ -10,7 +10,7 @@ The board requires a few components:
 * Two 7-segment displays
 * The corresponding resistors for powering the segments
 * Two push-buttons for controlling and setting the time
-* Two shift registers: 74hc595 for extending the pin capability of the attiny85
+* Two shift registers (serial IN - Parallel OUT): 74HC595 for extending the pin capability of the attiny85
 
 ## Control - Button behaviour
 
