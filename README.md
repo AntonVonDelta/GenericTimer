@@ -11,3 +11,17 @@ The board requires a few components:
 * The corresponding resistors for powering the segments
 * Two push-buttons for controlling and setting the time
 * Two shift registers: 74hc595 for extending the pin capability of the attiny85
+
+## Control - Button behaviour
+
+The timer provides control to two time-variables: the ON state and OFF state, meaning for how long it will activate the attached device (staying ON) and the dead interval between the activations (OFF time). This sequence repeats till powered off.
+
+All changes made to the two variables are saved in the eeprom and thus are impervious to poweroffs.
+
+  TIMER WORK:  how much time spent on doing work
+  TIMER DELAY: how much time spent between delays
+  
+	BTN1 click      ->  increments TIMER WORK
+	BTN1 dbl click  ->  decrement TIMER WORK
+	BTN1+BTN2 clicks: switch to other state(TIMER WORK or TIMER DELAY)
+	BTN2 click: does the work until pressed again. Resets TIMER DELAY 
