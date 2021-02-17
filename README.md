@@ -18,9 +18,9 @@ The timer provides control to two time-variables: the ON state and OFF state, me
 
 All changes made to the two variables are saved in the eeprom and thus are impervious to poweroffs.
 
-  TIMER WORK:  how much time spent on doing work
-  TIMER DELAY: how much time spent between delays
-  
+	TIMER WORK:  how much time spent on doing work
+	TIMER DELAY: how much time spent between delays
+	
 	BTN1 click      ->  increments TIMER WORK
 	BTN1 dbl click  ->  decrement TIMER WORK
 	BTN1+BTN2 clicks: switch to other state(TIMER WORK or TIMER DELAY)
