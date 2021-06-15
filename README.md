@@ -12,6 +12,8 @@ The board requires a few components:
 * Two push-buttons for controlling and setting the time
 * Two shift registers (serial IN - Parallel OUT): 74HC595 for extending the pin capability of the attiny85
 
+## Schematic
+
 ## Control - Button behaviour
 
 The timer provides control to two time-variables: the ON state and OFF state, meaning for how long it will activate the attached device (staying ON) and the dead interval between the activations (OFF time). This sequence repeats till powered off.
