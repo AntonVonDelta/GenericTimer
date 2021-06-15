@@ -13,6 +13,7 @@ The board requires a few components:
 * Two shift registers (serial IN - Parallel OUT): 74HC595 for extending the pin capability of the attiny85
 
 ## Schematic
+![Schematic](Schematic.png)
 
 ## Control - Button behaviour
 
